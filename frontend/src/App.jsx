@@ -11,6 +11,7 @@ import Cart from "./pages/Cart";
 import PlaceOrder from "./pages/PlaceOrder";
 import Orders from "./pages/Orders";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -29,6 +30,7 @@ function App() {
         <Route path="/orders" element={<Orders />} />
         <Route path="*" element={<div>Page not found</div>} />
       </Routes>
+      <Footer />
     </div>
   );
 }
